@@ -1,0 +1,108 @@
+/* global start */
+.content {
+    padding: 70px 50px;
+}
+/* global end */
+
+/* nav bar start */
+.nav-bar{
+    padding: 16px 50px;
+    position: relative;
+}
+.info { 
+    display: none;
+}
+.list-box{
+    width: 40px;
+    height: 40px;
+    font-size: 10px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.06);
+    border: 3px solid rgba(0, 0, 0, 0.3);
+    display: block;
+    position: relative;
+}
+.list-box:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+
+}
+.nav-list-md {
+    display: block;
+    position: absolute;
+    background-color: #0b95853f;
+    color: black;
+    width: 100%;
+    left: 0%;
+    top: 100%;
+    text-align: center;
+}
+.nav-list-md li {
+    padding: 5px;
+    border-radius: 0;
+    border-bottom: 1px solid #000;
+}
+.nav-list-md li:hover {
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+.list-box div {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+.nav-list{
+    display: none;
+}
+/* nav bar end */
+
+/* landing start */
+.landing .text {
+    width: 635px;
+}
+/* landing end */
+
+/* summary start */
+.summary .img{
+    display: none;
+}
+/* summary end */
+/* contact start */
+.contact .content {
+    align-items: center;
+}
+.contact p {
+    width: 100%;
+}
+/* contact end */
+/* kits start */
+.mini-head{
+    width: 100%;
+}
+/* kits end */
+/* repairs start */
+.repairs .repairs-content h1{
+    font-size: 34px;
+}
+.repairs .repairs-content p{
+    font-size: 15px;
+}
+/* repairs end */
+/* products start */
+.products .right-side{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 25px 25px;
+}
+/* products end */
+/* values start */
+/* values end */
+/* footer start */
+footer .up {
+    display: none;
+}
+footer .line {
+    display: none;
+}
+/* footer end */
