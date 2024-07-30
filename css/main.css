@@ -260,6 +260,9 @@ color: white;
     background-color: var(--secondary-color);
     border-radius: 12px;
     padding: 24px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .summary .img .details .graph {
     margin-bottom: 28px;
@@ -270,6 +273,122 @@ color: white;
     font-size:15px;
     line-height: 20.95px;
     color: #2A3334;
+}
+.summary .top {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+}
+.summary .top::before {
+    content: "";
+    position: absolute;
+    background-color: #2A3334;
+    height: 4px;
+    width: 10px;
+    bottom: -40%;
+    left: 11%;
+}
+.summary .line-one,
+.summary .line-two,
+.summary .line-three{
+    display: flex;
+    gap: 3px;
+}
+.summary .line-one div {
+    background: #2A3334;
+    width: 13.96px;
+    height: 2.5px;
+}
+.summary .line-one .alpha {
+    width: 18.87px;
+}
+.summary .line-two div {
+    background: #2A3334;
+    width: 13.96px;
+    height: 4.22px;
+}
+.summary .line-two .alpha {
+    width: 20.5px;
+}
+.summary .line-three div {
+    background: #2A3334;
+    width: 13.96px;
+    height: 4.22px;
+}
+.summary .line-three .alpha {
+    width: 22.16px;
+}
+.summary .details .body {
+    height: 67.66px;
+    width: 3px;
+    background: #2A3334;
+    position: absolute;
+    left: 21%;
+    bottom: 41%;
+}
+.summary .details .body::after,
+.summary .details .body::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 15px;
+    background: #2A3334;
+    top: 65%;
+}
+.summary .details .body::after {
+    left: -350%;
+}
+.summary .details .body::before{
+    left: 350%;
+}
+.summary .details .body .right,
+.summary .details .body .left {
+    position: absolute;
+    top: 70%;
+    color: #2A3334;
+}
+.summary .details .body .left {
+    left:-700%;
+}
+.summary .details .body .right {
+    left: 381%
+}
+.summary .details .foot {
+    height: 3px;
+    width: 80px;
+    background: #2A3334;
+    position: absolute;
+    bottom: 40%;
+    left: 8%;
+}
+.summary .details .foot::after,
+.summary .details .foot::before {
+    content: "";
+    position: absolute;
+    background: #2A3334;
+    width: 3px;
+    bottom: 100%;
+}
+.summary .details .foot::after {
+    height: 20px;
+    left: 0;
+}
+.summary .details .foot::before {
+    height: 10px;
+    right: 0;
+}
+.summary .details .foot .phone {
+    position: absolute;
+    right: -10%;
+    font-size: 25px;
+    bottom: 400%;
+}
+.summary .details .foot .tv {
+    position: absolute;
+    left: -17%;
+    font-size: 25px;
+    bottom: 745%;
 }
 /* summary end */
 /* contact start */
